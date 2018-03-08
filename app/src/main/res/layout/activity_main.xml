@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context="de.ludetis.monerominer.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="109dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/logo_trans" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/pool"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:text="Select Minig Pool..."
+        android:textColor="#ffffff"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/Lista"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#d5d5d5"
+        android:spinnerMode="dialog"
+        android:textColor="#ffffff"
+        android:textSize="70sp"
+        android:ellipsize="marquee"
+        android:textAlignment="center"
+        tools:ignore="MissingPrefix" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:text="@string/username"
+            android:textColor="#00e5e8"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+
+        <CheckBox
+            android:id="@+id/use_worker_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:buttonTint="@color/bitcoinnova"
+            android:checked="false"
+            android:text="@string/use_worker_id"
+            android:textColor="#00e5e8" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:text="EAsX15ieXY1NAk9Yu3NoVBfBqUgsFPsv47Ff4W1t491vHiD8fyGHD7nR7gVk1FrcbP2d2mJfBt3M45NgbV6ZRcSdHixcSPH"
+        android:textAlignment="center"
+        android:textColor="#00e5e8"
+        android:textSize="18sp"
+        android:maxLength="95"
+        android:layout_marginTop="0dp"
+
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:text="@string/threads"
+            android:textColor="#00e5e8" />
+
+        <EditText
+            android:id="@+id/threads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:maxLength="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cpus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/max_cpu_usage"
+            android:textColor="#00e5e8" />
+
+        <EditText
+            android:id="@+id/maxcpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80"
+            android:textColor="#00e5e8"
+            android:maxLength="2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/percent"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="000"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/hpers"
+                android:textColor="#ffffff" />
+
+
+            <TextView
+                android:id="@+id/accepted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="000"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/accepted"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:text="..."
+            android:textColor="#ffffff" />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="@string/start" />
+
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="@string/stop" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
