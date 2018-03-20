@@ -1,3 +1,5 @@
+<img src="http://pool.bitcoinn.biz/bitcoin-nova.png">
+
 # Android-Miner by bitcoin nova 
 
 Proof of concept using the xmrig miner inside an Android APK.
